@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="dashstyles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Customize Your Pizza</h2>
+    <form id="pizzaForm">
+      <div class="input-group">
+        <label for="base">Choose Base:</label>
+        <select id="base" required>
+          <option value="Thin Crust">Thin Crust</option>
+          <option value="Thick Crust">Thick Crust</option>
+          <option value="Cheese Burst">Cheese Burst</option>
+          <option value="Wheat Crust">Wheat Crust</option>
+          <option value="Gluten-Free">Gluten-Free</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="sauce">Choose Sauce:</label>
+        <select id="sauce" required>
+          <option value="Tomato">Tomato</option>
+          <option value="Barbeque">Barbeque</option>
+          <option value="Pesto">Pesto</option>
+          <option value="Alfredo">Alfredo</option>
+          <option value="Spicy">Spicy</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="cheese">Choose Cheese:</label>
+        <select id="cheese" required>
+          <option value="Mozzarella">Mozzarella</option>
+          <option value="Cheddar">Cheddar</option>
+          <option value="Parmesan">Parmesan</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="veggies">Choose Veggies:</label>
+        <select id="veggies" multiple required>
+          <option value="Onions">Onions</option>
+          <option value="Capsicum">Capsicum</option>
+          <option value="Olives">Olives</option>
+          <option value="Mushrooms">Mushrooms</option>
+          <option value="Corn">Corn</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </div>
+
+  <script src="dashscript.js"></script>
+  <script src="userdash.js"></script>
+</body>
+</html>
+
